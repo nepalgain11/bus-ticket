@@ -33,10 +33,12 @@ nav ul li a{
     padding: 10px;
     text-transform: uppercase;
     margin-left: 30px;
+    text-decoration: none;
 }
 nav ul li a:hover, a.active{
     background-color: #52AF3A;
     border-radius: 5px;
+    color:white;
 }
 .main-content{
     display: grid;
@@ -83,7 +85,7 @@ nav ul li a:hover, a.active{
     display: block;
     padding: 10px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #0000001f;
     background: #F3F5FF;
     border-radius: 4px;
     margin: 10px 0;
@@ -105,8 +107,20 @@ nav ul li a:hover, a.active{
     color: #3352F2;
     font-size: 30px;
     padding: 2px;
-    margin: 10px 10px 0px 0px;
+    margin: 3px 10px 0px 0px;
     word-spacing: 20px;
+    display:flex;
+    width:100%;
+}
+.plus-minus-btn{
+    font-size:24px;
+    color:#000000eb;
+}
+.first-plus, .first-minus, .economy-plus, .economy-minus{
+    cursor: pointer;;
+}
+.first-plus, .economy-plus{
+    margin-right:35px;
 }
 .btn-style{
     display: block;
