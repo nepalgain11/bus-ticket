@@ -136,6 +136,9 @@ nav ul li a:hover, a.active{
     font-weight: 500;
     background-color:  #52AF3A;
 }
+.btn-dflt{
+    background-color:  #52AF3A;
+}
 .amount{
     display: flex;
     justify-content: space-between;
