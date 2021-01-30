@@ -64,15 +64,14 @@
             <div class="inputs">
                 <div class="input-group f-class">
                 <div>
-                    <!-- --------------- -->
                     <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="" value="0">
+                    <input id="first-input" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
-                <div class="plus-minus-btn">
-                    <div class="first-plus">
+                <div class="plus-minus-btn">      <!-- ---first class---------- -->
+                    <div class="first-plus" id = "first-plus" >
                         <i class="fa fa-plus icon " aria-hidden="true"></i>
                     </div>
-                    <div class="first-minus">
+                    <div class="first-minus" id = "first-minus">
                         <i class="fa fa-minus icon first-minus" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -87,7 +86,7 @@
                         <div class="economy-plus" id= "economy-plus">
                             <i class="fa fa-plus icon" aria-hidden="true"></i>
                         </div>
-                        <div class="economy-minus" id= "economy-minus">
+                        <div class="economy-minus" id= "economy-minus" >
                             <i class="fa fa-minus icon first-minus" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -101,16 +100,16 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p id ="subtotal">500</p>
+                        <p id ="subtotal">$00</p>
                     </div>
                 </div>
 
                 <div class="amount">
                     <div class="left">
-                        <p>Charge 10% VAT</p>
+                        <p >Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <p id= "vat">$50</p>
                     </div>
                 </div>
                 <hr>
