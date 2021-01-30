@@ -53,8 +53,11 @@ nav ul li a:hover, a.active{
     float: left;
     margin-left: 50px;
 }
+.booking-content p{
+    font-size: 21px;;
+}
 .booking-content h1{
-    font-size: 70px;
+    font-size: 75px;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     font-weight: 500;
@@ -114,7 +117,7 @@ nav ul li a:hover, a.active{
     width:100%;
 }
 .plus-minus-btn{
-    font-size:24px;
+    font-size:20px !important;
     color:#000000eb;
 }
 .first-plus, .first-minus, .economy-plus, .economy-minus{

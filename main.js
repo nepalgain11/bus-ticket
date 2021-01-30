@@ -62,7 +62,7 @@ function ticketTotalCost(){
     const firstInput = document.getElementById("first-input");
     const firstValue = parseInt(firstInput.value);
 
-    var totalTicketPrice = economyValue * 100 + firstValue*150;
+    var totalTicketPrice = economyValue * 100 + firstValue * 150;
     document.getElementById("subtotal").innerText =  totalTicketPrice;
     let vatCount = totalTicketPrice * 10 /100;
     document.getElementById("vat").innerText = vatCount;
