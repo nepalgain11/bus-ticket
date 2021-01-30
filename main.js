@@ -1,4 +1,4 @@
-// first class function area
+// First class function area
 
 document.getElementById("first-plus").addEventListener("click", function(){
     firstClassFunction("increase");
@@ -26,7 +26,8 @@ function firstClassFunction(firstIncrease){
 
 
 
-// economy function area
+// Economy class function area
+
 document.getElementById("economy-plus").addEventListener("click", function(){
     economyFunction("increase")
 });
@@ -52,10 +53,9 @@ function economyFunction(economyIncrease){
 
 
 
-// subtotal, vat, inTotal 
+// Subtotal, vat, inTotal 
 
 function ticketTotalCost(){
-
     const economyInput = document.getElementById("economy-input");
     const economyValue = parseInt(economyInput.value);
 
@@ -64,50 +64,11 @@ function ticketTotalCost(){
 
     var totalTicketPrice = economyValue * 100 + firstValue * 150;
     document.getElementById("subtotal").innerText =  totalTicketPrice;
-    let vatCount = totalTicketPrice * 10 /100;
+    var vatCount = totalTicketPrice * 10 /100;
     document.getElementById("vat").innerText = vatCount;
     document.getElementById("pop-vat").innerText = "$" + vatCount;    
     var inTotal = totalTicketPrice + vatCount;
     document.getElementById("in-total").innerText = "$" + inTotal;
     document.getElementById("pop-total").innerText = "$" + inTotal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
