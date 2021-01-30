@@ -136,3 +136,43 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+.pop-first, .pop-economy{
+    width:200px;
+    overflow: hidden;
+    float:left;
+}
+#pop-first-class{
+    width:200px;
+    float:right;
+}
+#pop-economy-class{
+    width:200px;
+    float:right;
+}
+.first-class{
+    overflow: hidden;;
+}
+.economy{
+    overflow: hidden;
+}
+.total-vat{
+    overflow: hidden;
+}
+.pop-economy{
+    width:200px;
+    float:left;
+}
+#pop-vat, #pop-total{
+    width:200px;
+    overflow: hidden;
+    float:right;
+}
+.modal{
+    top:25%;
+}
+.modal-footer a{
+    text-decoration: none;
+    color:white;
+}
+
+

@@ -94,7 +94,7 @@ function firstClassFunction(firstIncrease){
     }
     firstInput.value = increaseDecrease;
     const firstTotal = increaseDecrease * 150;
-    //document.getElementById("subtotal").innerText ="$" + firstTotal;
+    document.getElementById("pop-first-class").innerText ="$" + firstTotal;
     ticketSubTotal()
 }
 
@@ -117,7 +117,7 @@ function economyFunction(economyIncrease){
     }
     economyInput.value = increaseDecrease;
     const economyTotal = increaseDecrease * 100;
-    //document.getElementById("subtotal").innerText = "$" + economyTotal;
+    document.getElementById("pop-economy-class").innerText = "$" + economyTotal;
     ticketSubTotal()
 }
 
@@ -131,6 +131,12 @@ function ticketSubTotal(){
 
     var totalTicketPrice = economyValue * 100 + firstValue*150;
     document.getElementById("subtotal").innerText = "$" + totalTicketPrice;
+    let vatCount = totalTicketPrice * 10 /100;
+    document.getElementById("vat").innerText = "$" + vatCount;
+    document.getElementById("pop-vat").innerText = "$" + vatCount;     //------
+    var inTotal = totalTicketPrice + vatCount;
+    document.getElementById("in-total").innerText = "$" + inTotal;
+    document.getElementById("pop-total").innerText = "$" + inTotal;
 }
 
 
