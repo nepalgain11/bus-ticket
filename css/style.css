@@ -5,9 +5,10 @@
     text-decoration: none;
     list-style-type: none;
 }
-body{
+
+.bg-area{
     font-family: 'Roboto', sans-serif;
-    background:url("../images/bus.png");
+    background:url("../images/bus.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -119,6 +120,9 @@ nav ul li a:hover, a.active{
 .first-plus, .first-minus, .economy-plus, .economy-minus{
     cursor: pointer;;
 }
+#pop-up-id{
+    display:none;
+}
 .first-plus, .economy-plus{
     margin-right:35px;
 }
@@ -175,4 +179,10 @@ nav ul li a:hover, a.active{
     color:white;
 }
 
-
+#Thank-you{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:750px;
+    font-size: 30px;;
+}

@@ -72,8 +72,8 @@
 
 
 
-// --------------------------------
 
+// first class function area
 
 document.getElementById("first-plus").addEventListener("click", function(){
     firstClassFunction("increase");
@@ -95,9 +95,17 @@ function firstClassFunction(firstIncrease){
     firstInput.value = increaseDecrease;
     const firstTotal = increaseDecrease * 150;
     document.getElementById("pop-first-class").innerText ="$" + firstTotal;
-    ticketSubTotal()
+    ticketTotalCost()
 }
 
+
+
+
+
+
+
+
+// economy function area
 document.getElementById("economy-plus").addEventListener("click", function(){
     economyFunction("increase")
 });
@@ -118,10 +126,14 @@ function economyFunction(economyIncrease){
     economyInput.value = increaseDecrease;
     const economyTotal = increaseDecrease * 100;
     document.getElementById("pop-economy-class").innerText = "$" + economyTotal;
-    ticketSubTotal()
+    ticketTotalCost()
 }
 
-function ticketSubTotal(){
+
+
+// subtotal, vat, intotal 
+
+function ticketTotalCost(){
 
     const economyInput = document.getElementById("economy-input");
     const economyValue = parseInt(economyInput.value);
@@ -133,13 +145,11 @@ function ticketSubTotal(){
     document.getElementById("subtotal").innerText = "$" + totalTicketPrice;
     let vatCount = totalTicketPrice * 10 /100;
     document.getElementById("vat").innerText = "$" + vatCount;
-    document.getElementById("pop-vat").innerText = "$" + vatCount;     //------
+    document.getElementById("pop-vat").innerText = "$" + vatCount;    
     var inTotal = totalTicketPrice + vatCount;
     document.getElementById("in-total").innerText = "$" + inTotal;
     document.getElementById("pop-total").innerText = "$" + inTotal;
 }
-
-
 
 
 
